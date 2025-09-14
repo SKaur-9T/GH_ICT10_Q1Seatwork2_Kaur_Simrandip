@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Pyscript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <style>
+        body {
+            background-color: #d4f8d4;   
+            font-family: "Poppins", sans-serif; 
+            text-align: center;
+            margin: 0;
+        }
+
+        .shoptitleholder {
+            background-color: #fff5cc;  
+            padding: 30px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        h1, p {
+            margin: 5px;
+        }
+
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-radius: 20px;
+            border: 4px solid rgb(48, 45, 42);
+            background-color: #ffffff;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            font-weight: 400;
+        }
+
+        th {
+            font-weight: 600;
+            background-color: #ccf5cc;
+        }
+
+        .footer {
+            font-size: 12px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+            color: #333;
+        }
+    </style>
+
+    <title>Pretzel Bites</title>
+</head>
+<body>
+
+ <img src="https://thumb.ac-illust.com/67/67b7ca6c22454107b775a04915a9884c_t.jpeg" 
+     alt="Pretzel Image" style="width:120px; margin:20px auto; display:block;">
+
+    <!-- Header -->
+    <div class="shoptitleholder">
+        <h1 id="shoptitle"></h1>
+        <p id="ownersname"></p>
+        <p id="yearestablished"></p>
+    </div>
+
+    <p id="deliverystatus"></p>
+    <p id="taxrate"></p>
+    <p style="letter-spacing: 5px; font-weight: 600;">MENU PRICELIST</p>
+
+    <!-- Menu Table -->
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price (₱)</th>
+        </tr>
+        <tr><td id="Super_Pretzel_product"></td><td id="Super_Pretzel_price"></td></tr>
+        <tr><td id="Pretzel_Bum_product"></td><td id="Pretzel_Bum_price"></td></tr>
+        <tr><td id="Coffee_product"></td><td id="Coffee_price"></td></tr>
+        <tr><td id="Pretzel_Crisps_product"></td><td id="Pretzel_Crisps_price"></td></tr>
+        <tr><td id="Cheese_Dip_product"></td><td id="Cheese_Dip_price"></td></tr>
+        <tr><td id="Mini_Pretzel_Box_product"></td><td id="Mini_Pretzel_Box_price"></td></tr>
+        <tr><td id="Stuffed_Pretzel_product"></td><td id="Stuffed_Pretzel_price"></td></tr>
+        <tr><td id="Pretzel_Sandwich_product"></td><td id="Pretzel_Sandwich_price"></td></tr>
+    </table>
+
+    <p id="commonallergens"></p>
+    <p id="businesshours"></p>
+
+    <!-- Footer -->
+    <div class="footer">
+        Simrandip Kaur | 10 - Topaz
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
